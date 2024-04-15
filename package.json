@@ -1,10 +1,20 @@
 {
   "name": "@shark-man/sharklib",
-  "version": "1.0.0",
-  "description": "library testn",
+  "version": "0.0.1",
+  "description": "library test",
   "main": "dist/cjs/index.js",
-  "module":"dist/esm/index.js",
-  "scripts": {},
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/sharmake124"
+  },
+  "scripts": {
+    "dev": "rollup -c --watch",
+    "build": "rollup -c"
+  },
   "author": "SHARK-MAN",
   "license": "MIT",
   "dependencies": {
@@ -16,6 +26,7 @@
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/react": "^18.2.78",
-    "rollup-plugin-dts": "^6.1.0"
+    "rollup-plugin-dts": "^6.1.0",
+    "tslib": "^2.6.2"
   }
 }

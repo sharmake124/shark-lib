@@ -3,7 +3,7 @@ type Props = {
 }
 
 const Button : React.FC<Props> = ({text})=>{
-    return <div>Button</div>
+    return <div>{text}</div>
 }
 
 export default Button;
